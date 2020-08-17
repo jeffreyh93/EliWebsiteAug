@@ -10,7 +10,19 @@
 	font-family: Arvo;
 }
 
-@media (min-width: 800px) {
+@media (min-width: 0px) {
+	#brandMain {
+		color: white;
+		width: 70%;
+	}
+	#brandSec {
+		color: white;
+		font-size: 0.9em;
+		width: 50%;
+	}
+}
+
+@media (min-width: 830px) {
 	#brandMain {
 		color: white;
 		width: 325px;
@@ -20,20 +32,35 @@
 		font-size: 0.9em;
 		width: 220px;
 	}
+	.nav>li>a {
+		padding-right: 40px;
+	}
 }
 
-@media (max-width: 800px) {
-	#brandMain {
-		color: white;
-		width: 70%;
+@media (min-width: 1000px) {
+	.nav>li>a {
+		padding-right: 80px;
 	}
-	#brandSec {
-		color: white;
-		font-size: 0.9em;
-		width: 220px;
-	}
-	
 }
+
+@media (min-width: 1390px) {
+	.nav>li>a {
+		padding-right: 20px;
+	}
+}
+
+@media (min-width: 1510px) {
+	.nav>li>a {
+		padding-right: 40px;
+	}
+}
+
+@media (min-width: 2010px) {
+	.nav>li>a {
+		padding-right: 80px;
+	}
+}
+
 
 #brandMain:hover, #brandSec:hover {
 	transition: color 0.5s ease;
@@ -48,10 +75,6 @@
 
 #myNavbar {
   color: white;
-}
-
-.nav>li>a {
-	padding-right: 40px;
 }
 
 .dropdown-menu {
@@ -137,7 +160,7 @@ html {
   background-color: #13132C;
   height: 250px;
   color: white;
-  padding: 20px;
+  padding-top: 20px;
 	position: absolute;
 	bottom: 0;
 	width: 100%;
@@ -231,4 +254,15 @@ h1 {
 
 #footer > div > hr {
 	border-color: #add8e6;
+}
+
+@media (max-width: 735px) {
+	.footerMobile {
+		font-size: 0.6em;
+	}
+}
+@media (max-width: 865px) {
+	.footerMobile {
+		font-size: 0.75em;
+	}
 }
