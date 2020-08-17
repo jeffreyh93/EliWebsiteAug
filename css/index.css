@@ -1,17 +1,30 @@
 /*beginning of template styles*/
-
+@font-face {
+	font-family: Arvo;
+	src: url('../fonts/Arvo/Arvo-Regular.ttf');
+}
 /*Header css*/
 
 #bar {
   background-color: #13132C;
+	font-family: Arvo;
 }
 
-#brand {
+#brandMain {
   color: white;
+	width: 450px;
 }
-#brand:hover {
+#brandMain:hover, #brandSec:hover {
 	transition: color 0.5s ease;
   color: #add8e6;
+}
+#myIcon:hover {
+	color: #add8e6;
+}
+#brandSec {
+	color: white;
+	font-size: 0.9em;
+	width: 250px;
 }
 
 #myNavbar {
@@ -45,12 +58,14 @@
 /*End of header css*/
 
 body {
-  padding-top: 100px;
+  padding-top: 50px;
+	font-family: helvetica;
 }
 
 #logoInfo {
   height: 50px;
   color: white;
+	font-family: Arvo;
 }
 
 
@@ -104,6 +119,7 @@ html {
 	position: absolute;
 	bottom: 0;
 	width: 100%;
+	font-family: Arvo;
 }
 .buttonSect {
   text-align: center;
