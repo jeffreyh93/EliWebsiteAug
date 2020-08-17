@@ -10,22 +10,41 @@
 	font-family: Arvo;
 }
 
-#brandMain {
-  color: white;
-	width: 450px;
+@media (min-width: 800px) {
+	#brandMain {
+		color: white;
+		width: 325px;
+	}
+	#brandSec {
+		color: white;
+		font-size: 0.9em;
+		width: 220px;
+	}
 }
+
+@media (max-width: 800px) {
+	#brandMain {
+		color: white;
+		width: 70%;
+	}
+	#brandSec {
+		color: white;
+		font-size: 0.9em;
+		width: 220px;
+	}
+	
+}
+
 #brandMain:hover, #brandSec:hover {
 	transition: color 0.5s ease;
   color: #add8e6;
 }
+
 #myIcon:hover {
 	color: #add8e6;
 }
-#brandSec {
-	color: white;
-	font-size: 0.9em;
-	width: 250px;
-}
+
+
 
 #myNavbar {
   color: white;
@@ -38,12 +57,15 @@
 .dropdown-menu {
   background-color: #13132C !important;
 }
+
 .dropdown-menu li a:hover {
   background-color: black !important;
 }
+
 .navbar-right li a {
   color: white !important;
 }
+
 .navbar-right li a:hover {
   transition: color 0.5s ease;
 	color: #add8e6 !important;
@@ -109,11 +131,11 @@ html {
   min-height: 100%;
 }
 #content {
-	margin-bottom: 200px;
+	margin-bottom: 250px;
 }
 #footer {
   background-color: #13132C;
-  height: 200px;
+  height: 250px;
   color: white;
   padding: 20px;
 	position: absolute;
@@ -180,6 +202,16 @@ img {
   padding-top: 15px;
   padding-left: 5px;
 }
+@media (max-width: 768px) {
+	.myHide {
+		display: none;
+	}
+}
+@media (min-width: 768px) {
+	.myHide {
+		display: inline;
+	}
+}
 
 #contact {
   text-align: right;
@@ -195,4 +227,8 @@ img {
 
 h1 {
   text-align: center;
+}
+
+#footer > div > hr {
+	border-color: #add8e6;
 }
