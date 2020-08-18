@@ -7,8 +7,8 @@
 	font-family: Playfair_Display_Reg;
 	src: url('../fonts/Playfair_Display/static/PlayfairDisplay-Regular.ttf');
 }
-/*Header css*/
 
+/*Beginning of header section*/
 #bar {
   background-color: #13132C;
 	font-family: Arvo;
@@ -19,22 +19,32 @@
 		color: white;
 		width: 70%;
 	}
-	#brandSec {
+	#brandSecEm {
 		color: white;
+		width: 60%;
 		font-size: 0.8em;
-		width: 50%;
+	}
+	#brandSecPh {
+		color: white;
+		width: 40%;
+		font-size: 0.8em;
 	}
 }
 
-@media (min-width: 830px) {
+@media (min-width: 850px) {
 	#brandMain {
 		color: white;
 		width: 325px;
 	}
-	#brandSec {
+	#brandSecEm, #brandSecPh {
 		color: white;
 		font-size: 0.9em;
+	}
+	#brandSecEm {
 		width: 280px;
+	}
+	#brandSecPh {
+		width: 200px;
 	}
 	.nav>li>a {
 		padding-right: 40px;
@@ -47,15 +57,15 @@
 	}
 }
 
-@media (min-width: 1390px) {
+@media (min-width: 1430px) {
 	.nav>li>a {
 		padding-right: 20px;
 	}
 }
 
-@media (min-width: 1510px) {
+@media (min-width: 1630px) {
 	.nav>li>a {
-		padding-right: 40px;
+		padding-right: 30px;
 	}
 }
 
@@ -65,8 +75,7 @@
 	}
 }
 
-
-#brandMain:hover, #brandSec:hover {
+#brandMain:hover, #brandSecEm:hover, #brandSecPh:hover {
 	transition: color 0.5s ease;
   color: #add8e6;
 }
@@ -74,8 +83,6 @@
 #myIcon:hover {
 	color: #add8e6;
 }
-
-
 
 #myNavbar {
   color: white;
@@ -96,44 +103,35 @@
 .navbar-right li a:hover {
   transition: color 0.5s ease;
 	color: #add8e6 !important;
-	
-  /*background-color: black !important;*/
 }
 
 .navbar-right li.myActive a {
 	color: #add8e6 !important;
 }
 
-/*End of header css*/
-
+/*Used throughout page*/
 body {
+  overflow-x: hidden;
   padding-top: 50px;
 }
 
-#logoInfo {
-  height: 50px;
-  color: white;
-	font-family: Arvo;
+#content {
+	margin-bottom: 250px;
+	font-family: Playfair_Display_Reg;
 }
-
 
 hr {
 	background: linear-gradient(to right, rgba(0, 51, 102, 0), rgba(0, 51, 102, 0.75), rgba(0, 51, 102, 0));
 	height: 2px;
 }
 
-#plumbPic {
-  height: 400px;
-}
-
-#summaryEli {
-  height: 300px;
-  padding-bottom: 75px;
-}
-
-#serviceInfo {
-  height: 300px;
+h1 {
   text-align: center;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
 }
 
 .learn {
@@ -141,6 +139,98 @@ hr {
   color: white;
 }
 
+.buttonSect {
+  text-align: center;
+  padding-bottom: 10px;
+}
+
+img {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+/*Beginning of carousel images section*/
+#plumbPic {
+  height: 400px;
+}
+
+.item img {
+		min-height: 400px;
+		max-height: 400px;
+		width: auto;
+		transition: .5s ease;
+		opacity: 0.9;
+	}
+
+.item:hover img {
+  opacity: 0.6;
+}
+
+/*Beginning of about me section*/
+@media (min-width: 650px) {
+	#summaryEli {
+		height: 300px;
+		padding-bottom: 75px;
+	}
+	
+	.profile {
+		max-height: 80%;
+		width: auto;
+		border-radius: 50%;
+	}
+}
+@media (max-width: 650px) {
+	#summaryEli {
+		height: 400px;
+		padding-bottom: 75px;
+	}
+	
+	.profile {
+		max-height: 50%;
+		width: auto;
+		border-radius: 50%;
+	}
+}
+
+/*Beginning of services section*/
+@media (max-width: 559px) {
+	#serviceInfo {
+		height: 350px;
+		text-align: center;
+	}
+}
+@media (min-width: 560px) {
+	#serviceInfo {
+		height: 300px;
+		text-align: center;
+	}
+}
+
+@media (min-width: 1050px) {
+	#serviceInfo {
+		height: 250px;
+		text-align: center;
+	}
+}
+
+.servContain {
+	background-image: url("../img/freeUsePlumbBackground.jpg");
+	background-size: 100% auto;
+	color: white;
+}
+
+.servHeader {
+  font-size: 1.25em;
+}
+
+#service {
+  text-align: center;
+	background-color: rgba(255, 204, 204, 0.75);
+	margin: 5px;
+}
+
+/*Beginning of footer section*/
 .table-responsive {
   border: 0;
 }
@@ -152,14 +242,7 @@ tr{
 .table-responsive {
   padding-top: 10px;
 }
-html {
-  position: relative;
-  min-height: 100%;
-}
-#content {
-	margin-bottom: 250px;
-	font-family: Playfair_Display_Reg;
-}
+
 #footer {
   background-color: #13132C;
   height: 250px;
@@ -170,39 +253,11 @@ html {
 	width: 100%;
 	font-family: Arvo;
 }
-.buttonSect {
-  text-align: center;
-  padding-bottom: 10px;
-}
+
 .myCols {
   height: 100%;
   display: flex;
   align-items: center;
-}
-
-.servHeader {
-  font-size: 1.25em;
-}
-
-.servDivide {
-  border-left:1.5px solid #13132C;
-}
-
-#service {
-  text-align: center;
-  background-color: white;
-}
-
-img {
-  margin-left: auto;
-  margin-right: auto;
-  display: block;
-}
-
-.profile {
-  max-height: 80%;
-  width: auto;
-  border-radius: 50%;
 }
 
 .navLink a {
@@ -214,14 +269,6 @@ img {
   color: #add8e6;
 }
 
-.item img {
-  min-height: 400px;
-  max-height: 400px;
-  width: auto;
-  transition: .5s ease;
-  opacity: 0.9;
-}
-
 #navList {
   list-style-type: none;
   padding: 0;
@@ -229,31 +276,41 @@ img {
   padding-top: 15px;
   padding-left: 5px;
 }
-@media (max-width: 768px) {
-	.myHide {
-		display: none;
+
+@media (max-width: 1080px) {
+	
+	#footer {
+		height: 600px;
+	}
+	
+	#content {
+		margin-bottom: 600px;
+	}
+	
+	#contact {
+		width: 100%;
+	}
+	
+	.navLink {
+		width: 100%;
+	}
+	
+	.opHours {
+		width: 100%;
 	}
 }
-@media (min-width: 768px) {
+@media (min-width: 1081px) {
 	.myHide {
 		display: inline;
 	}
-}
-
-#contact {
-  text-align: right;
+	
+	#contact {
+		text-align: right;
+	}
 }
 
 .learn:hover {
   color: #add8e6;
-}
-
-.item:hover img {
-  opacity: 0.6;
-}
-
-h1 {
-  text-align: center;
 }
 
 #footer > div > hr {

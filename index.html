@@ -24,8 +24,8 @@
 				</button>
 				<a class="navbar-brand"><img src="img/plumbing-logos.jpg" width="25" height="auto" /></a>
 				<a class="navbar-brand" id="brandMain" href="./index.html">Galpin's Plumbing and Heating</a>
-				<a class="navbar-brand" id="brandSec" href="html/contact.html"><span class="glyphicon glyphicon-envelope"></span>  Email: galpin.plumbing@gmail.com</a>
-				<a class="navbar-brand" id="brandSec" href="tel:+1-604-512-2987" title="Click to Call"><span class="glyphicon glyphicon-earphone"></span> Phone: (604) 512-2987</a>
+				<a class="navbar-brand" id="brandSecEm" href="html/contact.html"><span class="glyphicon glyphicon-envelope"></span>  Email: galpin.plumbing@gmail.com</a>
+				<a class="navbar-brand" id="brandSecPh" href="tel:+1-604-512-2987" title="Click to Call"><span class="glyphicon glyphicon-earphone"></span> Phone: (604) 512-2987</a>
 			</div>
 			<div class="collapse navbar-collapse" id="myNavbar">
 				<ul class="nav navbar-nav navbar-right">
@@ -64,7 +64,7 @@
 				<div class="carousel-inner">
 					<div class="item active">
 						<a href="https://www.google.ca/">
-							<img src="img/tempPlumbPic (1).jpg" alt="Image 1">
+							<img src="img/tempPlumbPic (1).jpg"	alt="Image 1">
 								<div class="carousel-caption">
 									<h3>Image 1</h3>
 									<p>Description of first image</p>
@@ -112,7 +112,7 @@
 
 	<!--divider between plumbing picture and eli summary, make this a bootstrap grid-->
 			<div class="row" id="summaryEli">
-				<h1>About Me</h1>
+				<h1>ABOUT ME</h1>
 				<div class="col-md-2"></div>
 				<div class="col-xs-6 col-md-4 myCols">
 					<img class="profile" src="img/Eli_Image.jpg" alt="Image 3"/>
@@ -127,30 +127,37 @@
 				<a href="html/about.html" class="btn learn" role="button">Learn More</a>
 			</div>
 
-			<hr>
-
 			<!--service information, make this a bootstrap grid-->
-			<div class="row" id="serviceInfo">
-				<h1>Services</h1>
-				<br>
-				<div class="col-md-3"></div>
-				<div class="col-xs-4 col-md-2" id="service">
-					<span class="servHeader">Service1</span><br><br>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever<br>
+			<div class="row servContain">
+				<div id="row serviceInfo">
+					<h1>SERVICES</h1>
+					<br>
+					<div class="row">
+						<div class="col-md-2"></div>
+						<div class="col-xs-4 col-md-3" id="service">
+							<span class="servHeader">Service1</span><br><br>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever<br>
+						</div>
+						<div class="col-md-2"></div>
+						<div class="col-xs-4 col-md-3 servDivide" id="service">
+							<span class="servHeader">Service2</span><br><br>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever<br>
+						</div>
+						<div class="col-md-2"></div>
+					</div>
+					<div class="row">
+						<div class="row"><br></div>
+						<div class="col-md-4"></div>
+						<div class="col-xs-4 col-md-4 servDivide" id="service">
+							<span class="servHeader">Service3</span><br><br>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever<br>
+						</div>
+					
+						<div class="col-md-4"></div>
+					</div>
 				</div>
-				<div class="col-xs-4 col-md-2 servDivide" id="service">
-					<span class="servHeader">Service2</span><br><br>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever<br>
-				</div>
-				<div class="col-xs-4 col-md-2 servDivide" id="service">
-					<span class="servHeader">Service3</span><br><br>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever<br>
-				</div>
-				<div class="col-md-3"></div>
-
+					<div class="row"><br></div>
+					<div class="row buttonSect">
+						<a href="html/services.html" class="btn learn" role="button">Learn More</a>
+					</div>
 			</div>
-
-			<div class="row buttonSect">
-				<a href="html/services.html" class="btn learn" role="button">Learn More</a>
-			</div>
-
 			<!--footer information, make this a bootstrap grid-->
 			<!--TODO - restructure on full size window-->
 			<div class="row" id="footer">
@@ -158,9 +165,9 @@
 				<div class="col-md-1"></div>
 
 				<!-- table for hours of operation -->
-				<div class="col-xs-5 col-md-3">
+				<div class="col-xs-5 col-md-3 opHours">
 					OPERATING HOURS
-					<hr>
+					<hr id="barFoot">
 					<div class="table-responsive">
 						<table class="table table-condensed">
 							<tbody>
@@ -190,7 +197,7 @@
 				<!--quick links to navigate through the site-->
 				<div class="col-xs-2 col-md-2 navLink">
 					NAVIGATION
-					<hr>
+					<hr id="barFoot">
 					<ul id="navList">
 						<li>
 							<a href="./index.html">
@@ -228,6 +235,7 @@
 								Contact
 							</a>
 						</li>
+						<br>
 					</ul>
 				</div>
 				
@@ -235,15 +243,14 @@
 				
 				<!--section for eli's contact info-->
 				<!--work location, phone number, email address, social media ln-->
-				<div class="col-xs-3 col-md-3 navLink" id="contact">
+				<div class="col-xs-2 col-md-3 navLink" id="contact">
 					CONTACT INFORMATION
 					<hr>
 					<ul id="navList">
 						<li>
 							<!--google maps link-->
-							<a target="_blank" href="https://goo.gl/maps/KUBZxQWWhnfSKYud7">
-								<span class="glyphicon glyphicon glyphicon-home myHide"></span>
-								123 Fake Street
+							<a target="_blank" href="https://goo.gl/maps/8JnYoG2aswrR1uFe7">
+								Metro Vancouver Area
 							</a>
 						</li>
 						<li>
