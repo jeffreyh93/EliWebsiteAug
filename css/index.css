@@ -3,6 +3,10 @@
 	font-family: Arvo;
 	src: url('../fonts/Arvo/Arvo-Regular.ttf');
 }
+@font-face {
+	font-family: Playfair_Display_Reg;
+	src: url('../fonts/Playfair_Display/static/PlayfairDisplay-Regular.ttf');
+}
 /*Header css*/
 
 #bar {
@@ -17,7 +21,7 @@
 	}
 	#brandSec {
 		color: white;
-		font-size: 0.9em;
+		font-size: 0.8em;
 		width: 50%;
 	}
 }
@@ -30,7 +34,7 @@
 	#brandSec {
 		color: white;
 		font-size: 0.9em;
-		width: 220px;
+		width: 280px;
 	}
 	.nav>li>a {
 		padding-right: 40px;
@@ -104,7 +108,6 @@
 
 body {
   padding-top: 50px;
-	font-family: helvetica;
 }
 
 #logoInfo {
@@ -155,6 +158,7 @@ html {
 }
 #content {
 	margin-bottom: 250px;
+	font-family: Playfair_Display_Reg;
 }
 #footer {
   background-color: #13132C;
