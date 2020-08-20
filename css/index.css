@@ -151,17 +151,23 @@ img {
 }
 
 /*Beginning of carousel images section*/
+/* To-do: try this instead https://smartslider3.com/blog/homepage-slider-examples/*/
 #plumbPic {
   height: 400px;
 }
 
+#myCarousel {
+	margin: auto;
+	max-width: 40%;
+}
+
 .item img {
-		min-height: 400px;
-		max-height: 400px;
-		width: auto;
-		transition: .5s ease;
-		opacity: 0.9;
-	}
+	min-height: 400px;
+	max-height: 400px;
+	width: 100%;
+	transition: .5s ease;
+	opacity: 0.9;
+}
 
 .item:hover img {
   opacity: 0.6;
@@ -226,7 +232,7 @@ img {
 
 #service {
   text-align: center;
-	background-color: rgba(255, 204, 204, 0.75);
+	background-color: rgba(0, 0, 0, 0.8);
 	margin: 5px;
 }
 
