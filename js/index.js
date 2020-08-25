@@ -7,3 +7,7 @@ $('#myCarousel').on('slide.bs.carousel', function(e) {
 		$(".carousel-inner").css('background-color', 'pink');
 	}
 })
+
+$('.carousel').carousel({
+  interval: false,
+});
