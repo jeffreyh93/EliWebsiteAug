@@ -7,8 +7,57 @@
 	font-family: Playfair_Display_Reg;
 	src: url('../fonts/Playfair_Display/static/PlayfairDisplay-Regular.ttf');
 }
+@font-face {
+	font-family: Playfair_Display_Bold;
+	src: url('../fonts/Playfair_Display/static/PlayfairDisplay-ExtraBold.ttf');
+}
+/*Used throughout page*/
+body {
+  overflow-x: hidden;
+}
 
-/*Beginning of header section*/
+#content {
+	margin-bottom: 250px;
+	font-family: Playfair_Display_Reg;
+	padding-right:0;
+  padding-left:0;
+  margin-right:auto;
+  margin-left:auto;
+	width: 100%;
+}
+
+hr {
+	background: linear-gradient(to right, rgba(0, 51, 102, 0), rgba(0, 51, 102, 0.75), rgba(0, 51, 102, 0));
+	height: 2px;
+}
+
+h1 {
+  text-align: center;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+.learn {
+  background-color: #13132C;
+  color: white;
+	letter-spacing: 1px;
+}
+
+.buttonSect {
+  text-align: center;
+  padding-bottom: 10px;
+}
+
+img {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+/*Beginning of header section https://southcorner.templates.editmysite.com/*/
 #headerInfo {
 	font-family: Arvo;
 }
@@ -50,6 +99,7 @@
 #bar {
 	background-color: #13132C !important;
 	font-size: 0.9em;
+	height: 50px;
 }
 
 #myNavbar {
@@ -62,6 +112,10 @@
 
 #myNavbar li {
 	text-align: center;
+}
+
+.dropdown-toggle {
+	background-color: #13132C !important;
 }
 
 .dropdown-menu {
@@ -78,60 +132,151 @@
 
 .nav li a {
   color: white !important;
+	letter-spacing: 2px;
 }
 
 .nav li a:hover {
   transition: color 0.5s ease;
 	color: #add8e6 !important;
+	
 }
 
 .nav li.myActive a {
 	color: #add8e6 !important;
+	border-bottom: 1px solid #add8e6;
+	margin: auto;
 }
 
-/*Used throughout page*/
-body {
-  overflow-x: hidden;
+@media (min-width: 1300px) {
+	.nav li.myActive a {
+		width: 40%;
+	}
 }
 
-#content {
-	margin-bottom: 250px;
-	font-family: Playfair_Display_Reg;
-	padding-right:0;
-  padding-left:0;
-  margin-right:auto;
-  margin-left:auto;
-	width: 100%;
+@media (min-width: 1000px) {
+	.nav li.myActive a {
+		width: 60%;
+	}
 }
 
-hr {
-	background: linear-gradient(to right, rgba(0, 51, 102, 0), rgba(0, 51, 102, 0.75), rgba(0, 51, 102, 0));
-	height: 2px;
+@media (min-width: 700px) {
+	.nav li.myActive a {
+		width: 80%;
+	}
 }
 
-h1 {
-  text-align: center;
+.navbar {
+	margin-bottom: 0;
 }
 
-html {
+/*Beginning of welcome image section*/
+#welcomeSect {
+	height: 600px;
+	margin: 0;
+}
+
+#welcomeSect .imgContainer {
   position: relative;
-  min-height: 100%;
-}
-
-.learn {
-  background-color: #13132C;
+  text-align: center;
   color: white;
 }
 
-.buttonSect {
-  text-align: center;
-  padding-bottom: 10px;
+#welcomeSect img {
+	filter: brightness(25%);
 }
 
-img {
-  margin-left: auto;
-  margin-right: auto;
-  display: block;
+#welcomeSect .centered {
+	position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#mainTitle {
+	font-family: Playfair_Display_Bold;
+}
+
+#subTitle {
+	color: #c9c9c9;
+	font-family: Playfair_Display_Reg;
+}
+
+@media (min-width: 480px) {
+	#mainTitle {
+		font-size: 2.25em;
+	}
+	
+	#subTitle {
+		font-size: 1em;
+	}
+}
+
+@media (min-width: 800px) {
+	#mainTitle {
+		font-size: 2.5em;
+	}
+
+	#subTitle {
+		font-size: 1em;
+	}
+}
+@media (min-width: 1050px) {
+	#mainTitle {
+		font-size: 3.5em;
+	}
+
+	#subTitle {
+	font-size: 1.25em;
+	}
+}
+
+/*Beginning of about company section*/
+
+
+@media (min-width: 801px) {
+	#aboutCompSect {
+		height: 500px;
+		margin: 0;
+		background-color: white;
+	}
+
+	#aboutCompSect .aboutCol {
+		display: flex;
+		justify-content: center;
+		flex-direction: column;
+		height: 100%;
+		letter-spacing: 1px;
+	}
+}
+
+@media (max-width: 800px) {
+	#aboutCompSect {
+		height: 1000px;
+	}
+	.aboutCol {
+		margin-left: 50px;
+		margin-right: 50px;
+		width: 80%;
+		height: 500px;
+		letter-spacing: 1px;
+		flex-direction: column;
+		display: flex;
+		justify-content: center;
+	}
+}
+
+/*Beginning of about us section*/
+#aboutUsSect {
+	height: 500px;
+	margin: 0;
+	background-color: yellow;
+}
+
+/*Beginning of about us section*/
+#gallerySect {
+	height: 500px;
+	margin: 0;
+	background-color: grey;
 }
 
 /*Beginning of carousel images section*/
