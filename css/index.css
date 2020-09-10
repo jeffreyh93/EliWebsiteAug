@@ -16,6 +16,14 @@ body {
   overflow-x: hidden;
 }
 
+.navbar {
+	z-index: 9999;
+}
+
+.navbar-collapse {
+	background-color: #13132C;
+}
+
 #content {
 	margin-bottom: 250px;
 	font-family: Playfair_Display_Reg;
@@ -100,6 +108,11 @@ img {
 	background-color: #13132C !important;
 	font-size: 0.9em;
 	height: 50px;
+	
+}
+
+.navbar {
+	border-radius: 0;
 }
 
 #myNavbar {
@@ -108,6 +121,7 @@ img {
 	width: 90%;
 	margin:0 auto;
 	color: white;
+	
 }
 
 #myNavbar li {
@@ -231,8 +245,6 @@ img {
 }
 
 /*Beginning of about company section*/
-
-
 @media (min-width: 801px) {
 	#aboutCompSect {
 		height: 500px;
@@ -245,7 +257,7 @@ img {
 		justify-content: center;
 		flex-direction: column;
 		height: 100%;
-		letter-spacing: 1px;
+		letter-spacing: 0.5px;
 	}
 }
 
@@ -258,178 +270,223 @@ img {
 		margin-right: 50px;
 		width: 80%;
 		height: 500px;
-		letter-spacing: 1px;
+		letter-spacing: 0.5px;
 		flex-direction: column;
 		display: flex;
 		justify-content: center;
 	}
 }
 
-/*Beginning of about us section*/
-#aboutUsSect {
-	height: 500px;
-	margin: 0;
-	background-color: yellow;
+/*Beginning of service section*/
+@media (min-width: 990px) {
+	#serveSect {
+		height: 500px;
+		margin: 0;
+		background-color: #f0f0f0;
+		letter-spacing: 0.5px;
+	}
+
+	#serveMTitle {
+		height: 75px;
+		margin: 0;
+	}
+
+	#serveSTitle {
+		height: 125px;
+		margin-left: 50px;
+		margin-right: 50px;
+		color: #4a4a4a;
+		text-align: center;
+	}
+
+	#serveContent {
+		height: 225px;
+		margin: 0;
+	}
+
+	#serveContent .col-md-4 {
+		text-align:center;
+		height: 100%;
+	}
+
+	
 }
 
-/*Beginning of about us section*/
-#gallerySect {
-	height: 500px;
-	margin: 0;
-	background-color: grey;
+@media (max-width: 990px){
+	#serveSect {
+		height: 850px;
+		margin: 0;
+		background-color: #f0f0f0;
+		letter-spacing: 0.5px;
+	}
+
+	#serveMTitle {
+		height: 75px;
+		margin: 0;
+	}
+
+	#serveSTitle {
+		height: 125px;
+		margin-left: 50px;
+		margin-right: 50px;
+		color: #4a4a4a;
+		text-align: center;
+	}
+
+	#serveContent {
+		height: 600px;
+		margin: 0;
+	}
+
+	#serveContent .col-md-4 {
+		text-align:center;
+		height: 200px;
+		margin-left: 15%;
+		margin-right: 15%;
+	}
 }
 
-/*Beginning of carousel images section*/
-#plumbPic {
-  height: 400px;
+@media (max-width: 700px) {
+	#serveSect {
+		height: 950px;
+		margin: 0;
+		background-color: #f0f0f0;
+		letter-spacing: 0.5px;
+	}
+
+	#serveMTitle {
+		height: 50px;
+		margin: 0;
+	}
+
+	#serveSTitle {
+		height: 175px;
+		margin-left: 50px;
+		margin-right: 50px;
+		color: #4a4a4a;
+		text-align: center;
+	}
+
+	#serveContent {
+		height: 675px;
+		margin: 0;
+	}
+
+	#serveContent .col-md-4 {
+		text-align:center;
+		height: 225px;
+		margin-left: 15%;
+		margin-right: 15%;
+	}
 }
 
-#myCarousel {
-	margin: auto;
-}
-.carousel-indicators li {
-	width: 10px;
-	height: 10px;
-	border-color: black;
+#serveContent span {
+	font-size: 65px;
 }
 
-.carousel-indicators .active{
-    background-color: white;
+#serveContent .servContTitle {
+	font-size: 1.5em;
+	font-family: Playfair_Display_Bold;
+	color: #4a4a4a;
 }
 
-.carousel-inner {
-	background-color: orange;
+/*Beginning of gallery section*/
+@media (min-width: 990px) {
+	#gallerySect {
+		height: 570px;
+		margin: 0;
+	}
+
+	#galleryMTitle {
+		height: 50px;
+	}
+
+	#gallerySTitle {
+		height: 100px;
+		text-align: center;
+	}
+
+	#galleryContentWrap {
+		height: 420px;
+	}
+
+	#galleryContentImg {
+		margin-left: 10%;
+		width: 80%;
+		height: 210px;
+	}
 }
 
-.carousel-inner .item img {
-	max-width: 40%;
-	float: right;
-}
-
-.carousel-fade .carousel-inner .item {
-  opacity: 0;
-  transition-property: opacity;
-}
-
-.carousel-fade .carousel-inner .active {
-  opacity: 1;
-}
-
-.carousel-fade .carousel-inner .active.left,
-.carousel-fade .carousel-inner .active.right {
-  left: 0;
-  opacity: 0;
-  z-index: 1;
-}
-
-.carousel-fade .carousel-inner .next.left,
-.carousel-fade .carousel-inner .prev.right {
-  opacity: 1;
-}
-
-.carousel-fade .carousel-control {
-  z-index: 2;
-}
-
-/*
-  WHAT IS NEW IN 3.3: "Added transforms to improve carousel performance in modern browsers."
-  Need to override the 3.3 new styles for modern browsers & apply opacity
-*/
-@media all and (transform-3d), (-webkit-transform-3d) {
-  .carousel-fade .carousel-inner > .item.next,
-  .carousel-fade .carousel-inner > .item.active.right {
-    opacity: 0;
-    -webkit-transform: translate3d(0, 0, 0);
-            transform: translate3d(0, 0, 0);
-  }
-  .carousel-fade .carousel-inner > .item.prev,
-  .carousel-fade .carousel-inner > .item.active.left {
-    opacity: 0;
-    -webkit-transform: translate3d(0, 0, 0);
-            transform: translate3d(0, 0, 0);
-  }
-  .carousel-fade .carousel-inner > .item.next.left,
-  .carousel-fade .carousel-inner > .item.prev.right,
-  .carousel-fade .carousel-inner > .item.active {
-    opacity: 1;
-    -webkit-transform: translate3d(0, 0, 0);
-            transform: translate3d(0, 0, 0);
-  }
-}
-.item img {
-	min-height: 400px;
-	max-height: 400px;
-	width: 100%;
-}
-
-.carousel-caption {
-	left: -20%;
-	padding-top: 125px;
-  bottom: auto;
-	color: black;
-}
-
-/*Beginning of about me section*/
-@media (min-width: 650px) {
-	#summaryEli {
-		height: 300px;
-		padding-bottom: 75px;
+@media (max-width: 990px) {
+	#gallerySect {
+		height: 1275px;
+		margin: 0;
 	}
 	
-	.profile {
-		max-height: 80%;
-		width: auto;
-		border-radius: 50%;
+	#galleryMTitle {
+		height: 25px;
 	}
-}
-@media (max-width: 650px) {
-	#summaryEli {
+
+	#gallerySTitle {
+		height: 50px;
+		text-align: center;
+	}
+	
+	#galleryContentWrap {
+		height: 1200px;
+	}
+	
+	#gallerycontentImg {
 		height: 400px;
-		padding-bottom: 75px;
 	}
 	
-	.profile {
-		max-height: 50%;
+	#galleryContentImg #gallImg {
+		width: 100%;
+		padding: 5%;
+	}
+	
+	#galleryContentImg #gallImg img {
+		height: 200px;
 		width: auto;
-		border-radius: 50%;
+	}
+	#gallerySect .buttonSect {
+		text-align: center;
+		height: 100px;
 	}
 }
 
-/*Beginning of services section*/
-@media (max-width: 559px) {
-	#serviceInfo {
-		height: 350px;
+@media (max-width: 800px) {
+	#gallerySect {
+		height: 1075px;
+		margin: 0;
+	}
+	
+	#galleryMTitle {
+		height: 25px;
+	}
+
+	#gallerySTitle {
+		height: 50px;
 		text-align: center;
 	}
-}
-@media (min-width: 560px) {
-	#serviceInfo {
-		height: 300px;
-		text-align: center;
+	
+	#galleryContentWrap {
+		height: 1000px;
 	}
-}
-
-@media (min-width: 1050px) {
-	#serviceInfo {
-		height: 250px;
-		text-align: center;
+	
+	#galleryContentImg #gallImg {
+		width: 100%;
+		padding: 5%;
 	}
-}
-
-.servContain {
-	background-image: url("../img/freeUsePlumbBackground.jpg");
-	background-size: 100% auto;
-	color: white;
-}
-
-.servHeader {
-  font-size: 1.25em;
-}
-
-#service {
-  text-align: center;
-	background-color: rgba(0, 0, 0, 0.8);
-	margin: 5px;
+	
+	#galleryContentImg #gallImg img {
+		height: 175px;
+		width: auto;
+	}
+	#gallerySect .buttonSect {
+		text-align: center;
+		height: 100px;
+	}
 }
 
 /*Beginning of footer section*/
@@ -455,6 +512,7 @@ tr{
 	margin: 0;
 	width: 100%;
 	font-family: Arvo;
+	letter-spacing: 1px;
 }
 
 .myCols {
