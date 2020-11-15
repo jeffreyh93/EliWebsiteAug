@@ -73,7 +73,7 @@ img {
 #head-businessLogo {
 	height: 125px;
 	text-align: center;
-	width: 450px;
+	width: 100%;
 	margin: auto;
 }
 
@@ -103,6 +103,20 @@ img {
 #head-contactInfo-ph {
 	text-align: left;
 }
+
+@media (max-width: 460px) {
+	#head-businessLogo img {
+		height: 60%;
+		margin-top: 5%;
+	}
+	#head-contactInfo-em {
+		font-size: 0.85em;
+	}
+	#head-contactInfo-ph {
+		font-size: 0.85em;
+	}
+}
+
 
 #bar {
 	background-color: #13132C !important;
@@ -186,12 +200,14 @@ img {
 /*Beginning of welcome image section*/
 #welcomeSect {
 	height: 600px;
+	width: 100%;
 	margin: 0;
 }
 
 #welcomeSect .imgContainer {
   position: relative;
   text-align: center;
+	width: 100%;
   color: white;
 }
 
@@ -391,6 +407,15 @@ img {
 }
 
 /*Beginning of gallery section*/
+@media (min-width: 1380px) {
+	#gallerySect {
+		height: 700px;
+	}
+	#gallImg img {
+		max-height: 250px;
+	}
+}
+
 @media (min-width: 990px) {
 	#gallerySect {
 		height: 570px;
@@ -414,6 +439,10 @@ img {
 		margin-left: 10%;
 		width: 80%;
 		height: 210px;
+	}
+	
+	#gallImg img {
+		max-height: 150px;
 	}
 }
 
@@ -487,6 +516,10 @@ img {
 		text-align: center;
 		height: 100px;
 	}
+}
+
+#gallImg img {
+	width: 100%;
 }
 
 /*Beginning of footer section*/

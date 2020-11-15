@@ -76,7 +76,7 @@ img {
 #head-businessLogo {
 	height: 125px;
 	text-align: center;
-	width: 450px;
+	width: 100%;
 	margin: auto;
 }
 
@@ -105,6 +105,19 @@ img {
 
 #head-contactInfo-ph {
 	text-align: left;
+}
+
+@media (max-width: 460px) {
+	#head-businessLogo img {
+		height: 60%;
+		margin-top: 5%;
+	}
+	#head-contactInfo-em {
+		font-size: 0.85em;
+	}
+	#head-contactInfo-ph {
+		font-size: 0.85em;
+	}
 }
 
 #bar {
@@ -246,11 +259,11 @@ img {
 	#contInfo-Em, #contInfo-Ph {	
 		height: 45%;
 		margin: auto;
-		width: 60%;
+		width: 40%;
 		background-color: #bfbfbf;
 	}
 	#contInfo-Em span, #contInfo-Ph span {
-		font-size: 40px;
+		font-size: 25px;
 		padding-top: 5px;
 		display: flex;
 		justify-content: center;
@@ -261,6 +274,39 @@ img {
 		padding-top: 3px;
 	}
 }
+
+@media (max-width: 460px) {
+	#contInfo {
+		padding-top: 8px;
+		height: 150px;
+		margin: auto;
+		text-align: center;
+		background-color: #f0f0f0;
+	}
+	
+	#contInfo-Em, #contInfo-Ph {	
+		height: 45%;
+		margin: auto;
+		width: 40%;
+		background-color: #bfbfbf;
+	}
+	#contInfo-Em span, #contInfo-Ph span {
+		font-size: 15px;
+		padding-top: 5px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		color: #13132C;
+	}
+	#contInfo-Em p, #contInfo-Ph p {
+		padding-top: 3px;
+	}
+}
+
+#contInfo-Ph, #contInfo-Em {
+	border: 1px solid;
+}
+
 #contInfo a {
 	text-decoration: none;
 	color: #13132C;

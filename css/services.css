@@ -72,7 +72,7 @@ img {
 #head-businessLogo {
 	height: 125px;
 	text-align: center;
-	width: 450px;
+	width: 100%;
 	margin: auto;
 }
 
@@ -101,6 +101,19 @@ img {
 
 #head-contactInfo-ph {
 	text-align: left;
+}
+
+@media (max-width: 460px) {
+	#head-businessLogo img {
+		height: 60%;
+		margin-top: 5%;
+	}
+	#head-contactInfo-em {
+		font-size: 0.85em;
+	}
+	#head-contactInfo-ph {
+		font-size: 0.85em;
+	}
 }
 
 #bar {
