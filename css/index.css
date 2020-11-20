@@ -418,7 +418,7 @@ img {
 
 @media (min-width: 990px) {
 	#gallerySect {
-		height: 570px;
+		height: 470px;
 		margin: 0;
 	}
 
@@ -448,7 +448,7 @@ img {
 
 @media (max-width: 990px) {
 	#gallerySect {
-		height: 1275px;
+		height: 775px;
 		margin: 0;
 	}
 	
@@ -469,15 +469,6 @@ img {
 		height: 400px;
 	}
 	
-	#galleryContentImg #gallImg {
-		width: 100%;
-		padding: 5%;
-	}
-	
-	#galleryContentImg #gallImg img {
-		height: 200px;
-		width: auto;
-	}
 	#gallerySect .buttonSect {
 		text-align: center;
 		height: 100px;
@@ -486,7 +477,7 @@ img {
 
 @media (max-width: 800px) {
 	#gallerySect {
-		height: 1075px;
+		height: 475px;
 		margin: 0;
 	}
 	
@@ -503,23 +494,10 @@ img {
 		height: 1000px;
 	}
 	
-	#galleryContentImg #gallImg {
-		width: 100%;
-		padding: 5%;
-	}
-	
-	#galleryContentImg #gallImg img {
-		height: 175px;
-		width: auto;
-	}
 	#gallerySect .buttonSect {
 		text-align: center;
 		height: 100px;
 	}
-}
-
-#gallImg img {
-	width: 100%;
 }
 
 /*Beginning of footer section*/

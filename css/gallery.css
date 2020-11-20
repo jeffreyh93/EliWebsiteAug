@@ -195,6 +195,15 @@ img {
 	margin-bottom: 0;
 }
 
+/*Beginning of content section*/
+#content {
+	background-color: #f0f0f0;
+}
+
+.thumbnail {
+	background-color: light-blue;
+}
+
 /*Beginning of footer section*/
 .table-responsive {
   border: 0;
