@@ -49,13 +49,13 @@
 							<li class="dropdown">
 								<a class="dropdown-toggle" data-toggle="dropdown" href="#">SERVICES<span class="caret"></span></a>
 								<ul class="dropdown-menu">
-									<li><a href="html/services.html">Service 1</a></li>
-									<li><a href="html/services.html">Service 2</a></li>
-									<li><a href="html/services.html">Service 3</a></li>
+									<li><a href="./html/services.html#heatSect">HEATING</a></li>
+									<li><a href="./html/services.html#gasSect">GAS</a></li>
+									<li><a href="./html/services.html#plumbSect">PLUMBING</a></li>
 								</ul>
 							</li>
 							<li><a href="html/gallery.html">GALLERY</a></li>
-							<li><a href="html/reviews.html">REVIEWS</a></li>
+							<!--<li><a href="html/reviews.html">REVIEWS</a></li>-->
 							<li><a href="html/contact.html">CONTACT</a></li>
 						</ul>
 					</div>
@@ -69,14 +69,81 @@
 		<!--welcome image section-->
 		<div class="row" id="welcomeSect">
 			<div class="imgContainer">
-				<img src="img/pics/20170413_075228.jpg" alt="WelcomeImg" style="height:600px; width:100%;">
-				<div class="centered">
-					<p id="mainTitle">GALPIN'S PLUMBING & HEATING</p>
-					<p id="subTitle">Click below to learn more about us and the services we provide!</p>
+				<img id="back-img" src="img/ShowImages/GalleryImages/Residential Renovations.jpg" alt="WelcomeImg">
+				<div class="centered col-md-5 col-sm-6">
+					<p id="mainTitle">GALPIN'S PLUMBING & HEATING LTD.</p>
+					<p id="subTitle">Fill in the form to learn more about us and the services we provide!</p>
+				</div>
+				<div class="img-form col-md-6 col-sm-6">
+					<p id="formTitle">Request a quote now!</p>
 					<br>
-					<div class="row buttonSect">
-						<a href="html/about.html" class="btn learn" role="button">ABOUT US</a>
+					<form class="gform" method="POST" action="https://script.google.com/macros/s/AKfycbwiL42Yl678rZoveTG-hQJyjlWqwtXm1hPCdyEZxWnQmsFc25MQ/exec" role="form">
+						<div class="messages"></div>
+						<div class="controls">
+							<!--Name row-->
+							<div class="row">
+								<div class="col-md-6">
+									<div class="form-group">
+										<label for="form_name">First Name *</label>
+										<input id="form_name" type="text" name="name" class="form-control" placeholder="Enter your first name *" required="required" data-error="Firstname is required.">
+										<div class="help-block with-errors"></div>
+									</div>
+								</div>
+								<div class="col-md-6">
+									<div class="form-group">
+										<label for="form_lastname">Last Name *</label>
+										<input id="form_lastname" type="text" name="surname" class="form-control" placeholder="Enter your last name *" required="required" data-error="Lastname is required.">
+										<div class="help-block with-errors"></div>
+									</div>
+								</div>
+							</div>
+							<!--Email row-->
+							<div class="row">
+								<div class="col-md-6">
+									<div class="form-group">
+										<label for="form_email">Email *</label>
+										<input id="form_email" type="email" name="email" class="form-control" placeholder="Please enter your email *" required="required" data-error="Valid email is required.">
+										<div class="help-block with-errors"></div>
+									</div>
+								</div>
+								<div class="col-md-6">
+									<div class="form-group">
+										<label for="form_need">Please specify your need *</label>
+										<select id="form_need" name="need" class="form-control" required="required" data-error="Please specify your need.">
+											<option value=""></option>
+											<option value="Request quotation">Request quotation</option>
+											<option value="Request service">Request service</option>
+											<option value="Request copy of an invoice">Request copy of an invoice</option>
+											<option value="Other">Other</option>
+											</select>
+										<div class="help-block with-errors"></div>
+									</div>
+								</div>
+							</div>
+							<!--Message row-->
+							<div class="row">
+								<div class="col-md-12">
+									<div class="form-group">
+										<label for="form_message">Message *</label>
+										<textarea id="form_message" name="message" class="form-control" placeholder="Please tell us more about your needs *" rows="4" required="required" data-error="Please, leave us a message."></textarea>
+										<div class="help-block with-errors"></div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-md-12">
+										<strong>*</strong> These fields are required.</p>
+									</div>
+								</div>
+								<div class="col-md-12">
+									<input type="submit" class="btn btn-success btn-send learn" value="SEND EMAIL">
+								</div>
+							</div>				
+					<div style="display:none" class="thankyou_message">
+					<!-- You can customize the thankyou message by editing the code below -->
+						<h3>Thank you for contacting us! We will get back to you soon!</h3>
 					</div>
+						</div>
+					</form>
 				</div>
 			</div>
 		</div>
@@ -87,15 +154,13 @@
 			<div class="col-xs-6 col-md-5 aboutCol">
 				<p style="font-size: 2em; font-family: Playfair_Display_Bold;">Friendly, Affordable, and Professional</p>
 				<hr>
-				<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </p>
-				<br>
-				<p>It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+				<p>Our mission is to provide high quality service at a reasonable price. Fully certified and insured, we are available to help you with all your plumbing, heating, & gas needs.</p>
 				<br>
 				<div class="row buttonSect">
-					<a href="html/contact.html" class="btn learn" role="button">CONTACT NOW</a>
+					<a href="html/about.html" class="btn learn" role="button">ABOUT US</a>
 				</div>
 			</div>
-			<div class="col-xs-6 col-md-4 aboutCol"">
+			<div class="col-xs-6 col-md-4 aboutCol">
 				<img src="img/plumb-logo.png" alt="Plumbing Pic" style="height: auto; width: 100%">
 			</div>
 			<div class="col-md-1"></div>
@@ -109,7 +174,8 @@
 			<div class="row" id="serveSTitle">
 				<p style="font-size: 2em;font-family:Playfair_Display_Bold;">What We Offer</p>
 				<br>
-				<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever.</p>
+				<p>Licensed and bonded, Galpin Plumbing & Heating is certified to help you with all your plumbing & heating needs. With third party liability and Worksafe BC coverage, you can rest assured that the quality and craftsmanship of our work meet the highest standards.
+				</p>
 			</div>
 			<div class="row" id="serveContent">
 				<div class="col-md-4">
@@ -117,23 +183,24 @@
 					<br>
 					<br>
 					<p class="servContTitle">Heating</p>
-					<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever.</p>
+					<p>Service heating systems (boilers, forced airs)<br>New heating system installation<br>Boiler repair<br>Heating pipe repair<br>Radiant heating installation</p>
 				</div>
 				<div class="col-md-4">
-					<span class="glyphicon glyphicon-tint" style="color:#7388ff;"></span>
+					<span class="glyphicon glyphicon-cloud" style="color:#7388ff;"></span>
 					<br>
 					<br>
-					<p class="servContTitle">Drainage</p>
-					<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever.</p>
+					<p class="servContTitle">Gas</p>
+					<p>Gas water tank installation<br>Gas leak detection and repair<br>Gas appliance installation<br>Carbon monoxide detection</p>
 				</div>
 				<div class="col-md-4">
 					<span class="glyphicon glyphicon-wrench" style="color:#37383b;"></span>
 					<br>
 					<br>
-					<p class="servContTitle">Repipes</p>
-					<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever.</p>
+					<p class="servContTitle">Plumbing</p>
+					<p>Drain cleaning (commercial, residential)<br>Fixture installation and service<br>Sump pumps<br>Hot water tank servicing and installation<br>Pipe repair<br>Repipe jobs</p>
 				</div>
 			</div>
+			<br>
 			<div class="row buttonSect">
 					<a href="html/services.html" class="btn learn" role="button">LEARN MORE</a>
 				</div>
@@ -150,29 +217,29 @@
 			<div class="row" id="galleryContentWrap">	
 				<div class="col-md-3 col-xs-6">
 				<div class="thumbnail">
-					<a href="img/pics/20170519_085236.jpg">
-						<img src="img/pics/20170519_085236.jpg" alt="img5" style="width:100%">
+					<a href="img/ShowImages/GalleryImages/Radiant Floor Heating.jpg">
+						<img src="img/ShowImages/GalleryImages/Radiant Floor Heating.jpg" alt="img5" style="width:100%">
 					</a>
 				</div>
 			</div>
 			<div class="col-md-3 col-xs-6">
 				<div class="thumbnail">
-					<a href="img/pics/20170523_151448.jpg">
-						<img src="img/pics/20170523_151448.jpg" alt="img6" style="width:100%">
+					<a href="img/ShowImages/GalleryImages/Residential and Commercial Repipes.jpg">
+						<img src="img/ShowImages/GalleryImages/Residential and Commercial Repipes.jpg" alt="img6" style="width:100%">
 					</a>
 				</div>
 			</div>
 			<div class="col-md-3 col-xs-6">
 				<div class="thumbnail">
-					<a href="img/pics/20180605_101234.jpg">
-						<img src="img/pics/20180605_101234.jpg" alt="img7" style="width:100%">
+					<a href="img/ShowImages/GalleryImages/Sewer Main Replacement _ Spot Repairs.jpg">
+						<img src="img/ShowImages/GalleryImages/Sewer Main Replacement _ Spot Repairs.jpg" alt="img7" style="width:100%">
 					</a>
 				</div>
 			</div>
 			<div class="col-md-3 col-xs-6">
 				<div class="thumbnail">
-					<a href="img/pics/20180503_215957.jpg">
-						<img src="img/pics/20180503_215957.jpg" alt="img8" style="width:100%">
+					<a href="img/ShowImages/GalleryImages/Commercial Steam Boilers.jpg">
+						<img src="img/ShowImages/GalleryImages/Commercial Steam Boilers.jpg" alt="img8" style="width:100%">
 					</a>
 				</div>
 			</div>
@@ -195,20 +262,12 @@
 					<table class="table table-condensed">
 						<tbody>
 							<tr>
-								<td>Mon - Fri</td>
-								<td>9am - 5pm</td>
-							</tr>
-							<tr>
-								<td>Sat</td>
-								<td>10am - 3pm</td>
+								<td>Mon - Sat</td>
+								<td>9am - 7pm</td>
 							</tr>
 							<tr>
 								<td>Sun</td>
-								<td>11am - 4pm</td>
-							</tr>
-							<tr>
-								<td>Holidays</td>
-								<td>12am - 5pm</td>
+								<td>10am - 5pm</td>
 							</tr>
 						</tbody>
 					</table>
@@ -246,12 +305,12 @@
 							Gallery
 						</a>
 					</li>
-					<li>
+					<!--<li>
 						<a href="html/reviews.html">
 							<span class="glyphicon glyphicon-menu-right myHide"></span>
 							Reviews
 						</a>
-					</li>
+					</li>-->
 					<li>
 						<a href="html/contact.html">
 							<span class="glyphicon glyphicon-menu-right myHide"></span>
@@ -294,6 +353,8 @@
 			</div>
 		</div>
 	</div>
+	<script data-cfasync="false" type="text/javascript" src="./js/form-submission-handler.js"></script>
+	<script src="//code.tidio.co/anww0jys5ytyjhyckls8kicxoa0muh7v.js" async></script>
 </body>
 </html>
 <script src="js/index.js"></script>

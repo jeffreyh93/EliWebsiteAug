@@ -14,6 +14,7 @@
 /*Used throughout page*/
 body {
   overflow-x: hidden;
+  letter-spacing: 0.075em;
 }
 
 .navbar {
@@ -51,7 +52,6 @@ html {
 .learn {
   background-color: #13132C;
   color: white;
-	letter-spacing: 1px;
 }
 
 .buttonSect {
@@ -160,7 +160,6 @@ img {
 
 .nav li a {
   color: white !important;
-	letter-spacing: 2px;
 }
 
 .nav li a:hover {
@@ -205,24 +204,67 @@ img {
 }
 
 #welcomeSect .imgContainer {
-  position: relative;
-  text-align: center;
+  	position: relative;
 	width: 100%;
-  color: white;
+  	color: white;
+}
+.learn:active, .learn:hover, .learn:focus {
+	background-color: #13132C !important;
+}
+.learn {
+	border: white;
+}
+@media (min-width: 770px) {
+	#back-img {
+		height: 600px;
+		width: 100%;
+	}
+	#welcomeSect .centered {
+		position: absolute;
+		top: 50%;
+		transform: translate(0, -50%);
+		padding-left: 10%;
+	}
+	#welcomeSect .img-form {
+		transform: translate(100%, -50%);
+		background-color: rgba(0, 51, 102, 0.5);
+		top: 50%;
+		position: absolute;
+		height: 100%;
+		padding: 2%;
+	}
+}
+
+@media (max-width: 769px) {
+	#welcomeSect {
+		height: 800px;
+	}
+
+	#back-img {
+		height: 800px;
+		width: 100%;
+	}
+
+	#welcomeSect .centered {
+		position: absolute;
+		top: 2%;
+		text-align: center;
+	}
+
+	#welcomeSect .img-form {
+		background-color: rgba(0, 51, 102, 0.5);
+		transform: translate(50%, 0);
+		top: 25%;
+		position: absolute;
+		padding: 2%;
+	}
 }
 
 #welcomeSect img {
 	filter: brightness(25%);
 }
 
-#welcomeSect .centered {
-	position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-#mainTitle {
+#mainTitle, #formTitle {
 	font-family: Playfair_Display_Bold;
 }
 
@@ -235,7 +277,9 @@ img {
 	#mainTitle {
 		font-size: 2.25em;
 	}
-	
+	#formTitle {
+		font-size: 1.75em;
+	}
 	#subTitle {
 		font-size: 1em;
 	}
@@ -245,7 +289,9 @@ img {
 	#mainTitle {
 		font-size: 2.5em;
 	}
-
+	#formTitle {
+		font-size: 2em;
+	}
 	#subTitle {
 		font-size: 1em;
 	}
@@ -254,7 +300,9 @@ img {
 	#mainTitle {
 		font-size: 3.5em;
 	}
-
+	#formTitle {
+		font-size: 2.5em;
+	}
 	#subTitle {
 	font-size: 1.25em;
 	}
@@ -273,7 +321,6 @@ img {
 		justify-content: center;
 		flex-direction: column;
 		height: 100%;
-		letter-spacing: 0.5px;
 	}
 }
 
@@ -286,7 +333,6 @@ img {
 		margin-right: 50px;
 		width: 80%;
 		height: 500px;
-		letter-spacing: 0.5px;
 		flex-direction: column;
 		display: flex;
 		justify-content: center;
@@ -299,7 +345,6 @@ img {
 		height: 500px;
 		margin: 0;
 		background-color: #f0f0f0;
-		letter-spacing: 0.5px;
 	}
 
 	#serveMTitle {
@@ -330,10 +375,9 @@ img {
 
 @media (max-width: 990px){
 	#serveSect {
-		height: 850px;
+		height: 1050px;
 		margin: 0;
 		background-color: #f0f0f0;
-		letter-spacing: 0.5px;
 	}
 
 	#serveMTitle {
@@ -342,7 +386,7 @@ img {
 	}
 
 	#serveSTitle {
-		height: 125px;
+		height: 150px;
 		margin-left: 50px;
 		margin-right: 50px;
 		color: #4a4a4a;
@@ -350,13 +394,13 @@ img {
 	}
 
 	#serveContent {
-		height: 600px;
+		height: 750px;
 		margin: 0;
 	}
 
 	#serveContent .col-md-4 {
 		text-align:center;
-		height: 200px;
+		height: 250px;
 		margin-left: 15%;
 		margin-right: 15%;
 	}
@@ -364,10 +408,9 @@ img {
 
 @media (max-width: 700px) {
 	#serveSect {
-		height: 950px;
+		height: 1000px;
 		margin: 0;
 		background-color: #f0f0f0;
-		letter-spacing: 0.5px;
 	}
 
 	#serveMTitle {
@@ -384,7 +427,7 @@ img {
 	}
 
 	#serveContent {
-		height: 675px;
+		height: 700px;
 		margin: 0;
 	}
 
@@ -499,6 +542,8 @@ img {
 		height: 100px;
 	}
 }
+
+/*Beginning of contact section*/
 
 /*Beginning of footer section*/
 .table-responsive {

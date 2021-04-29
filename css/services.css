@@ -14,6 +14,7 @@
 /*Used throughout page*/
 body {
   overflow-x: hidden;
+  letter-spacing: 0.075em;
 }
 .navbar {
 	z-index: 9999;
@@ -24,6 +25,8 @@ body {
 }
 
 #content {
+	
+	font-size: 1.35em;
 	margin-bottom: 250px;
 	font-family: Playfair_Display_Reg;
 	padding-right:0;
@@ -195,6 +198,37 @@ img {
 	margin-bottom: 0;
 }
 
+/*Beginning of content section*/
+#gasSect {
+	background-color: #f0f0f0;
+}
+@media (min-width: 801px) {
+	#heatSect, #gasSect, #plumbSect {
+		height: 400px;
+		margin: 0;
+	}
+	#heatSect .aboutCol, #gasSect .aboutCol, #plumbSect .aboutCol {
+		display: flex;
+		justify-content: center;
+		flex-direction: column;
+		height: 100%;
+	}
+}
+
+@media (max-width: 800px) {
+	#heatSect, #gasSect, #plumbSect {
+		height: 1000px;
+	}
+	#heatSect .aboutCol, #gasSect .aboutCol, #plumbSect .aboutCol {
+		margin-left: 50px;
+		margin-right: 50px;
+		width: 80%;
+		height: 500px;
+		flex-direction: column;
+		display: flex;
+		justify-content: center;
+	}
+}
 /*Beginning of footer section*/
 .table-responsive {
   border: 0;

@@ -67,10 +67,10 @@
     xhr.open('POST', url);
     // xhr.withCredentials = true;
     xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
-	
+    
     xhr.onreadystatechange = function() {
         if (xhr.readyState === 4 && xhr.status === 200) {
-			
+          
           window.alert("Email successfully sent");
           form.reset();
           var formElements = form.querySelector(".form-elements")
@@ -80,7 +80,7 @@
 
           var thankYouMessage = form.querySelector(".thankyou_message");
           if (thankYouMessage) {
-			thankYouMessage.style.display = "block";
+			      thankYouMessage.style.display = "block";
           }
         }
     };
