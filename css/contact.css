@@ -303,6 +303,13 @@ img {
 	}
 }
 
+@media (max-height: 960px) and (min-width: 1080px) {
+	#content {
+		padding-top: 250px;
+		padding-bottom: 250px;
+	}	
+}
+
 #contInfo-Ph, #contInfo-Em {
 	border: 1px solid;
 }
@@ -313,7 +320,7 @@ img {
 }
 #content {
 	letter-spacing: 0.5px;
-	background-color: #f0f0f0;
+	/*background-color: #f0f0f0;*/
 }
 
 .learn {
