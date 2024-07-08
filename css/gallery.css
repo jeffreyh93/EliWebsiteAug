@@ -14,6 +14,7 @@
 /*Used throughout page*/
 body {
   overflow-x: hidden;
+  letter-spacing: 0.075em;
 }
 .navbar {
 	z-index: 9999;
@@ -95,7 +96,7 @@ img {
 
 #head-contactInfo a:hover {
 	transition: color 0.5s ease;
-  color: #272391;
+  	color: #272391;
 	opacity: 0.9;
 }
 
@@ -103,16 +104,23 @@ img {
 	text-align: left;
 }
 
-@media (max-width: 460px) {
+@media (max-width: 520px) {
 	#head-businessLogo img {
 		height: 60%;
 		margin-top: 5%;
 	}
+	
 	#head-contactInfo-em {
-		font-size: 0.85em;
+		text-align: center;
+		width: 100%;
 	}
 	#head-contactInfo-ph {
-		font-size: 0.85em;
+		text-align: center;
+		width: 100%;
+	}
+
+	#head-navDirectory {
+		padding-top: 25px;
 	}
 }
 
@@ -157,7 +165,7 @@ img {
 }
 
 .nav li a {
-  color: white !important;
+  	color: white !important;
 	letter-spacing: 2px;
 }
 
