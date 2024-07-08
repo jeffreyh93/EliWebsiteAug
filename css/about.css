@@ -104,16 +104,23 @@ img {
 	text-align: left;
 }
 
-@media (max-width: 460px) {
+@media (max-width: 520px) {
 	#head-businessLogo img {
 		height: 60%;
 		margin-top: 5%;
 	}
+	
 	#head-contactInfo-em {
-		font-size: 0.85em;
+		text-align: center;
+		width: 100%;
 	}
 	#head-contactInfo-ph {
-		font-size: 0.85em;
+		text-align: center;
+		width: 100%;
+	}
+
+	#head-navDirectory {
+		padding-top: 25px;
 	}
 }
 

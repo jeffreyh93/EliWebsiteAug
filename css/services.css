@@ -104,16 +104,23 @@ img {
 	text-align: left;
 }
 
-@media (max-width: 460px) {
+@media (max-width: 520px) {
 	#head-businessLogo img {
 		height: 60%;
 		margin-top: 5%;
 	}
+	
 	#head-contactInfo-em {
-		font-size: 0.85em;
+		text-align: center;
+		width: 100%;
 	}
 	#head-contactInfo-ph {
-		font-size: 0.85em;
+		text-align: center;
+		width: 100%;
+	}
+
+	#head-navDirectory {
+		padding-top: 25px;
 	}
 }
 
@@ -202,7 +209,7 @@ img {
 }
 @media (min-width: 801px) {
 	#heatSect, #gasSect, #plumbSect {
-		height: 400px;
+		height: 500px;
 		margin: 0;
 	}
 	#heatSect .aboutCol, #gasSect .aboutCol, #plumbSect .aboutCol {
@@ -211,6 +218,8 @@ img {
 		flex-direction: column;
 		height: 100%;
 		font-size: 1.35em;
+		padding-top: 50px;
+		padding-bottom: 50px;
 	}
 }
 
