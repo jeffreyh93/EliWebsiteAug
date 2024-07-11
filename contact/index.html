@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Contact | Galpin Plumbing & Heating Ltd.</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+	
+  <link rel="stylesheet" type="text/css" href="../css/contact.css" />
+  <link rel="icon" href="../img/plumbing-logos.png" />
+  <script data-cfasync="false" type="text/javascript" src="https://cdn.rawgit.com/dwyl/html-form-send-email-via-google-script-without-server/master/form-submission-handler.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+  <!-- full header, 3 rows-->
+	<div id="headerInfo" class="container-fluid">
+  <!-- nav bar -->
+		<div class="row" id="head-businessLogo">
+			<a href="../">
+				<img src="../img/EliCompanySlogan.png" width="auto" height="100" alt="Galpin Plumbing and Heating Ltd."></img>
+			</a>
+		</div>
+		<div class="row" id="head-contactInfo">
+			<div id="head-contactInfo-em" class="col-xs-6 col-md-6">
+				<a href="../contact" title="Click to Email"><span class="glyphicon glyphicon-envelope"></span> galpin.plumbing@gmail.com</a>
+			</div>
+			<div class="col-xs-1 col-md-1"></div>
+			<div id="head-contactInfo-ph" class="col-xs-5 col-md-5">
+				<a href="tel:+1-604-512-2987" title="Click to Call"><span class="glyphicon glyphicon-earphone"></span> (604) 512-2987</a>
+			</div>
+		</div>
+		
+		<div class="row" id="head-navDirectory">
+			<nav class="navbar navbar-inverse navbar-custom">
+				<div class="container-fluid" id="bar">
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+					</div>
+					<div class="collapse navbar-collapse" id="myNavbar">
+						<ul class="nav nav-justified">
+							<li><a href="../">HOME</a></li>
+							<li><a href="../about">ABOUT</a></li>
+							<li class="dropdown">
+								<a class="dropdown-toggle" data-toggle="dropdown" href="#">SERVICES<span class="caret"></span></a>
+								<ul class="dropdown-menu">
+									<li><a href="../services#heatSect">HEATING</a></li>
+									<li><a href="../services#gasSect">GAS</a></li>
+									<li><a href="../services#plumbSect">PLUMBING</a></li>
+								</ul>
+							</li>
+							<li><a href="../gallery">GALLERY</a></li>
+							<!--<li><a href="./reviews.html">REVIEWS</a></li>-->
+							<li class="myActive"><a href="../contact">CONTACT</a></li>
+						</ul>
+					</div>
+				</div>
+			</nav>
+		</div>
+	</div>
+	<div class="row" id="contInfo">
+		<div class="col-md-2"></div>
+		<div class="col-md-3" id="contInfo-Ph">
+			<a href="tel:+1-604-512-2987" title="Click to Call">
+				<div class="row">
+					<span class="glyphicon glyphicon-phone-alt"></span>
+				</div>
+				<div class="row">
+					<p class="contInfo-Desc">(604) 512-2987</p>
+				</div>
+			</a>
+		</div>
+		<div class="col-md-2"></div>
+		<div class="col-md-3" id="contInfo-Em">
+			<div class="row">
+				<span class="glyphicon glyphicon-envelope"></span>
+			</div>
+			<div class="row">
+				<p class="contInfo-Desc">galpin.plumbing@gmail.com</p>
+			</div>
+		</div>
+		<div class="col-md-2"></div>
+	</div>
+	<div class="container-fluid" id="content">
+		
+		<div class="row align-items-center" style="width: 100%;">
+			<div class="col-md-1"></div>
+			<div class="col-md-4">
+				<iframe id="centerMap" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d333448.21765516006!2d-123.34866297785022!3d49.237271992790255!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5486755042841f0b%3A0xfa6b0c5bcc14079b!2sGalpin&#39;s%20Plumbing%20and%20Heating!5e0!3m2!1sen!2sca!4v1598045528364!5m2!1sen!2sca" width="400" height="400" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+			</div>
+			<div class="col-md-1"></div>
+			<div class="col-md-5">
+				<p style="font-size: 2em; font-family: Playfair_Display_Bold;">Contact Us</p>
+				Have questions? Need a quote? Contact us and we will reply as soon as possible!
+				<br>
+				<br>
+				<!--form section to send email-->
+				<form class="gform" method="POST" action="https://script.google.com/macros/s/AKfycbynliiao4zaQhXeOooGCFtgpmjlY40JAadNFU-GpPD80wTo1A07YXWnCKBOjl7E-juDsg/exec" role="form">
+					<div class="messages"></div>
+					<div class="controls">
+						<!--Name row-->
+						<div class="row">
+							<div class="col-md-6">
+								<div class="form-group">
+									<label for="form_name">First Name *</label>
+									<input id="form_name" type="text" name="name" class="form-control" placeholder="Enter your first name *" required="required" data-error="Firstname is required.">
+									<div class="help-block with-errors"></div>
+								</div>
+							</div>
+							<div class="col-md-6">
+								<div class="form-group">
+									<label for="form_lastname">Last Name *</label>
+									<input id="form_lastname" type="text" name="surname" class="form-control" placeholder="Enter your last name *" required="required" data-error="Lastname is required.">
+									<div class="help-block with-errors"></div>
+								</div>
+							</div>
+						</div>
+						<!--Email row-->
+						<div class="row">
+							<div class="col-md-6">
+								<div class="form-group">
+									<label for="form_email">Email *</label>
+									<input id="form_email" type="email" name="email" class="form-control" placeholder="Please enter your email *" required="required" data-error="Valid email is required.">
+									<div class="help-block with-errors"></div>
+								</div>
+							</div>
+							<div class="col-md-6">
+								<div class="form-group">
+									<label for="form_need">Please specify your need *</label>
+									<select id="form_need" name="need" class="form-control" required="required" data-error="Please specify your need.">
+										<option value=""></option>
+										<option value="Request quotation">Request quotation</option>
+										<option value="Request order status">Request service</option>
+										<option value="Request copy of an invoice">Request copy of an invoice</option>
+										<option value="Other">Other</option>
+										</select>
+									<div class="help-block with-errors"></div>
+								</div>
+							</div>
+						</div>
+						<!--Message row-->
+						<div class="row">
+							<div class="col-md-12">
+								<div class="form-group">
+									<label for="form_message">Message *</label>
+									<textarea id="form_message" name="message" class="form-control" placeholder="Please tell us more about your needs *" rows="4" required="required" data-error="Please, leave us a message."></textarea>
+									<div class="help-block with-errors"></div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-md-12">
+									<p class="text-muted">
+									<strong>*</strong> These fields are required.</p>
+								</div>
+							</div>
+							<div class="col-md-12">
+								<input type="submit" class="btn btn-success btn-send learn" value="Send message">
+							</div>
+						</div>
+	
+						
+				
+				<div style="display:none" class="thankyou_message">
+				<!-- You can customize the thankyou message by editing the code below -->
+					<h4>Thank you for contacting us! We will get back to you soon!</h4>
+				</div>
+					</div>
+				</form>
+	
+			</div>
+			<div class="col-md-1"></div>
+		</div>
+		
+		<!--footer information, make this a bootstrap grid-->
+		<div class="row" id="footer">
+			<div class="col-md-1"></div>
+			<!-- table for hours of operation -->
+			<div class="col-xs-5 col-md-3 opHours">
+				OPERATING HOURS
+				<hr id="barFoot">
+				<div class="table-responsive">
+					<table class="table table-condensed">
+						<tbody>
+							<tr>
+								<td>Mon - Sun</td>
+								<td>Open 24 Hours</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+		
+			<div class="col-md-1"></div>
+		
+			<!--quick links to navigate through the site-->
+			<div class="col-xs-2 col-md-2 navLink">
+				NAVIGATION
+				<hr id="barFoot">
+				<ul id="navList">
+					<li>
+						<a href="../">
+							<span class="glyphicon glyphicon-menu-right myHide"></span>
+							Home
+						</a>
+					</li>
+					<li>
+						<a href="../about">
+							<span class="glyphicon glyphicon-menu-right myHide"></span>
+							About
+						</a>
+					</li>
+					<li>
+						<a href="../services">
+							<span class="glyphicon glyphicon-menu-right myHide"></span>
+							Services
+						</a>
+					</li>
+					<li>
+						<a href="../gallery">
+							<span class="glyphicon glyphicon-menu-right myHide"></span>
+							Gallery
+						</a>
+					</li>
+					<!--<li>
+						<a href="html/reviews.html">
+							<span class="glyphicon glyphicon-menu-right myHide"></span>
+							Reviews
+						</a>
+					</li>-->
+					<li>
+						<a href="../contact">
+							<span class="glyphicon glyphicon-menu-right myHide"></span>
+							Contact
+						</a>
+					</li>
+					<br>
+				</ul>
+			</div>
+			
+			<div class="col-xs-1 col-md-1"></div>
+			
+			<!--section for eli's contact info-->
+			<!--work location, phone number, email address, social media ln-->
+			<div class="col-xs-2 col-md-3 navLink" id="contact">
+				CONTACT INFORMATION
+				<hr>
+				<ul id="navList">
+					<li>
+						<!--google maps link-->
+						<a target="_blank" href="https://goo.gl/maps/2EVWYtt35askDwH18">
+							Metro Vancouver Area
+						</a>
+					</li>
+					<li>
+						<!--google phone call link-->
+						<a href="tel:+1-604-512-2987" title="Click to Call">
+							<span class="glyphicon glyphicon-earphone myHide"></span>
+							(604) 512-2987
+						</a>
+					</li>
+					<li>
+						<!--contact link page-->
+						<a href="../contact">
+							<span class="glyphicon glyphicon-envelope myHide"></span>
+							galpin.plumbing@gmail.com
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<!--<script data-cfasync="false" type="text/javascript" src="../js/form-submission-handler.js"></script>-->
+	<!--<script src="//code.tidio.co/anww0jys5ytyjhyckls8kicxoa0muh7v.js" async></script>-->
+</body>
+</html>
