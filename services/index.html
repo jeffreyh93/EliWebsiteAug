@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>About | Galpin Plumbing & Heating Ltd.</title>
+  <title>Services | Galpin Plumbing & Heating Ltd.</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 	
-  <link rel="stylesheet" type="text/css" href="../css/about.css" />
+  <link rel="stylesheet" type="text/css" href="../css/services.css" />
   <link rel="icon" href="../img/plumbing-logos.png" />
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
@@ -45,8 +45,8 @@
 					<div class="collapse navbar-collapse" id="myNavbar">
 						<ul class="nav nav-justified">
 							<li><a href="../">HOME</a></li>
-							<li class="myActive"><a href="/">ABOUT</a></li>
-							<li class="dropdown">
+							<li><a href="../about">ABOUT</a></li>
+							<li class="myActive dropdown">
 								<a class="dropdown-toggle" data-toggle="dropdown" href="#">SERVICES<span class="caret"></span></a>
 								<ul class="dropdown-menu">
 									<li><a href="../services#heatSect">HEATING</a></li>
@@ -64,23 +64,65 @@
 		</div>
 	</div>
 	<div class="container-fluid" id="content">
-
-		<div class="row">
-			<div class="col-md-6">
-				<p class="about-content">
-					In 2010, Elias began apprenticing as a plumber under the mentorship of a longtime plumber and family friend. Throughout his technical training, he worked as an apprentice-plumber for various construction companies. Throughout his training, he also remained involved in the residential service industry.
-					<br>
-					<br>
-					Following the completion of his plumbing and gasfitting certifications, Elias joined multiple locale plumbing companies, many of which focused on both the residential and commercial sectors. Their guidance and experience helped give Elias the skills to start Galpin Plumbing & Heating Ltd.
-					<br>
-					<br>
-					With more than a decade in the plumbing industry, Eli has a wealth of knowledge in the commercial and residential sector. Him and his team are ready to help you with all your plumbing & heating needs.
-
-				</p>
+		<div class="row" id="heatSect">
+			<div class="col-md-3"></div>
+			<div class="col-xs-6 col-md-3 aboutCol">
+				<p style="font-size: 2em; font-family: Playfair_Display_Bold;">Heating</p>
+				<hr>
+				<p>Service heating systems (boilers, forced airs)</p>
+				<p>New heating system installation</p>
+				<p>Boiler repair</p>
+				<p>Heating pipe repair</p>
+				<p>Radiant heating installation</p>
+				<br>
 			</div>
-			<div class="col-md-6" id="about-img">
-				<img src="../img/IMG_20200827_194023.jpg">
+			<div class="col-xs-6 col-md-3 aboutCol">
+				<a href="../img/ShowImages/GalleryImages/Hot Water Tank Installation.jpg" style="height: 90%; width: auto">
+					<img src="../img/ShowImages/GalleryImages/Hot Water Tank Installation.jpg" alt="Heating Pic" style="height: 90%; width: auto">
+				</a>
 			</div>
+			<div class="col-md-3"></div>
+		</div>
+
+		<div class="row" id="gasSect">
+			<div class="col-md-3"></div>
+			<div class="col-xs-6 col-md-3 aboutCol">
+				<a href="../img/ShowImages/GalleryImages/Boiler Room Service.jpg" style="height: 90%; width: auto">
+					<img src="../img/ShowImages/GalleryImages/Boiler Room Service.jpg" alt="Gas Pic" style="height: 90%; width: auto">
+				</a>
+			</div>
+			<div class="col-xs-6 col-md-3 aboutCol">
+				<p style="font-size: 2em; font-family: Playfair_Display_Bold;">Gas</p>
+				<hr>
+				<p>Gas water tank installation</p>
+				<p>Gas leak detection and repair</p>
+				<p>Gas appliance installation</p>
+				<p>Carbon monoxide detection</p>
+				<br>
+			</div>
+			<div class="col-md-3"></div>
+		</div>
+
+		<div class="row" id="plumbSect">
+			<div class="col-md-3"></div>
+			<div class="col-xs-6 col-md-3 aboutCol">
+				<p style="font-size: 2em; font-family: Playfair_Display_Bold;">Plumbing</p>
+				<hr>
+				<p>Drain cleaning (commercial, residential)</p>
+				<p>Fixture installation and service</p>
+				<p>Sump pumps</p>
+				<p>Hot water tank servicing and installation</p>
+				<p>Pipe repair</p>
+				<p>Repipe jobs</p>
+
+				<br>
+			</div>
+			<div class="col-xs-6 col-md-3 aboutCol">
+				<a href="../img/ShowImages/GalleryImages/Forced Air Furnace Maintenance _ Repair.jpg" style="height: 90%; width: auto">
+					<img src="../img/ShowImages/GalleryImages/Forced Air Furnace Maintenance _ Repair.jpg" alt="Plumbing Pic" style="height: 90%; width: auto">
+				</a>
+			</div>
+			<div class="col-md-3"></div>
 		</div>
 
 		<!--footer information, make this a bootstrap grid-->
@@ -116,7 +158,7 @@
 						</a>
 					</li>
 					<li>
-						<a href="/">
+						<a href="../about">
 							<span class="glyphicon glyphicon-menu-right myHide"></span>
 							About
 						</a>
